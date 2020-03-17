@@ -19,11 +19,11 @@ spec:
      - containerPort: 3000
      resources:
       limits: 
-       cpu: "1.5"
+       cpu: "1000m"
        memory: "500Mi"
       requests:         
-       cpu: "1000m"
-       memory: "50Mi"
+       cpu: "500m"
+       memory: "300Mi"
    imagePullSecrets:
      - name: my-docker-credentials
    priorityClassName: high-priority
